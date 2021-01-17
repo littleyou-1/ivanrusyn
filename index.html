@@ -1,0 +1,46 @@
+<html >
+<html >
+<head>
+    <meta charset="utf-8">
+   <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<!-- include ar.js for A-Frame -->
+<script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.5/aframe/build/aframe-ar.js"></script>
+
+  </head>
+
+
+
+
+ <body style='margin : 0px; overflow: scroll;'>
+  <a-scene embedded arjs="patternRatio: 0.9; sourceType: webcam; debugUIEnabled: false;">
+    <!-- create your content here. just a box for now -->
+    <a-marker type = 'pattern' url = 'marker/pattern-logo1 (1).patt'>
+              <a-entity link="on: click; href: https://instagram.com/rusyn_tech?igshid=pa96bwg1rwvy">
+             <a-box src="instagram.jpg"   position='-0.7 0.1 -0.4' scale='0.2 0.05 0.2' rotation='0 0 0'> </a-box>
+              </a-entity>
+               <a-entity link="on: click; href: https://www.facebook.com/profile.php?id=100010988314881">
+             <a-box src="gmail.png"   position='-0.7 0.1 0' scale='0.2 0.05 0.2' rotation='0 0 0'> </a-box>
+              </a-entity>
+               <a-entity link="on: click; href: https://www.facebook.com/profile.php?id=100010988314881">
+             <a-box src="phone.png"   position='-0.7 0.1 0.4' scale='0.2 0.05 0.2' rotation='0 0 0'> </a-box>
+              </a-entity>
+              <a-entity text="font: mozillavr; value: Rusyn Tech - Augmented reality design studio" position='0 0.5 -0.72' rotation='-45 0 0'></a-entity>
+              <a-plane src="DSC_6095.jpg" position='-0.4 0.1 -0.7' scale='0.3 0.2 0.3' rotation='-45 0 0'> </a-plane>
+
+                  <a-entity text="font: mozillavr; value: Rusyn Ivan" position='0.3 0.3 -0.7' rotation='-45 0 0' ></a-entity>
+                  <a-entity text="font: mozillavr; value: Owner and general director of the studio" position='0.3 0.2 -0.7' rotation='-45 0 0' ></a-entity>
+
+    <!-- define a camera which will move according to the marker position -->
+    </a-marker>
+    <a-entity camera>
+    <a-cursor scale= '0.5 0.5 0.5'>  </a-cursor>
+    </a-entity>
+
+
+  </a-scene>
+
+</body>
+
+</html>
+
